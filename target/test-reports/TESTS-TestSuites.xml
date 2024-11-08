@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="valentina-5-14ABA7" id="0" name="RaceIntegrationSpec" package="racetrackk" tests="1" time="0.153" timestamp="2024-11-06T06:10:13">
+      <properties />
+
+      <testcase classname="racetrackk.RaceIntegrationSpec" name="test race dates before today" time="0.153" />
+
+      <system-out><![CDATA[--Output from test race dates before today--
+
+Errors:
+grails.validation.ValidationErrors: 6 errors
+Field error in object 'racetrackk.Race' on field 'name': rejected value [null]; codes [racetrackk.Race.name.nullable.error.racetrackk.Race.name,racetrackk.Race.name.nullable.error.name,racetrackk.Race.name.nullable.error.java.lang.String,racetrackk.Race.name.nullable.error,race.name.nullable.error.racetrackk.Race.name,race.name.nullable.error.name,race.name.nullable.error.java.lang.String,race.name.nullable.error,racetrackk.Race.name.nullable.racetrackk.Race.name,racetrackk.Race.name.nullable.name,racetrackk.Race.name.nullable.java.lang.String,racetrackk.Race.name.nullable,race.name.nullable.racetrackk.Race.name,race.name.nullable.name,race.name.nullable.java.lang.String,race.name.nullable,nullable.racetrackk.Race.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class racetrackk.Race]; default message [La propiedad [{0}] de la clase [{1}] no puede ser nulo]
+Field error in object 'racetrackk.Race' on field 'startDate': rejected value [Wed Oct 30 01:10:13 COT 2024]; codes [racetrackk.Race.startDate.validator.error.racetrackk.Race.startDate,racetrackk.Race.startDate.validator.error.startDate,racetrackk.Race.startDate.validator.error.java.util.Date,racetrackk.Race.startDate.validator.error,race.startDate.validator.error.racetrackk.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrackk.Race.startDate.validator.invalid.racetrackk.Race.startDate,racetrackk.Race.startDate.validator.invalid.startDate,racetrackk.Race.startDate.validator.invalid.java.util.Date,racetrackk.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrackk.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrackk.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrackk.Race,Wed Oct 30 01:10:13 COT 2024]; default message [La propiedad [{0}] de la clase [{1}] con valor [{2}] no es válido]
+Field error in object 'racetrackk.Race' on field 'city': rejected value [null]; codes [racetrackk.Race.city.nullable.error.racetrackk.Race.city,racetrackk.Race.city.nullable.error.city,racetrackk.Race.city.nullable.error.java.lang.String,racetrackk.Race.city.nullable.error,race.city.nullable.error.racetrackk.Race.city,race.city.nullable.error.city,race.city.nullable.error.java.lang.String,race.city.nullable.error,racetrackk.Race.city.nullable.racetrackk.Race.city,racetrackk.Race.city.nullable.city,racetrackk.Race.city.nullable.java.lang.String,racetrackk.Race.city.nullable,race.city.nullable.racetrackk.Race.city,race.city.nullable.city,race.city.nullable.java.lang.String,race.city.nullable,nullable.racetrackk.Race.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class racetrackk.Race]; default message [La propiedad [{0}] de la clase [{1}] no puede ser nulo]
+Field error in object 'racetrackk.Race' on field 'state': rejected value [null]; codes [racetrackk.Race.state.nullable.error.racetrackk.Race.state,racetrackk.Race.state.nullable.error.state,racetrackk.Race.state.nullable.error.java.lang.String,racetrackk.Race.state.nullable.error,race.state.nullable.error.racetrackk.Race.state,race.state.nullable.error.state,race.state.nullable.error.java.lang.String,race.state.nullable.error,racetrackk.Race.state.nullable.racetrackk.Race.state,racetrackk.Race.state.nullable.state,racetrackk.Race.state.nullable.java.lang.String,racetrackk.Race.state.nullable,race.state.nullable.racetrackk.Race.state,race.state.nullable.state,race.state.nullable.java.lang.String,race.state.nullable,nullable.racetrackk.Race.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class racetrackk.Race]; default message [La propiedad [{0}] de la clase [{1}] no puede ser nulo]
+Field error in object 'racetrackk.Race' on field 'distance': rejected value [null]; codes [racetrackk.Race.distance.nullable.error.racetrackk.Race.distance,racetrackk.Race.distance.nullable.error.distance,racetrackk.Race.distance.nullable.error.java.math.BigDecimal,racetrackk.Race.distance.nullable.error,race.distance.nullable.error.racetrackk.Race.distance,race.distance.nullable.error.distance,race.distance.nullable.error.java.math.BigDecimal,race.distance.nullable.error,racetrackk.Race.distance.nullable.racetrackk.Race.distance,racetrackk.Race.distance.nullable.distance,racetrackk.Race.distance.nullable.java.math.BigDecimal,racetrackk.Race.distance.nullable,race.distance.nullable.racetrackk.Race.distance,race.distance.nullable.distance,race.distance.nullable.java.math.BigDecimal,race.distance.nullable,nullable.racetrackk.Race.distance,nullable.distance,nullable.java.math.BigDecimal,nullable]; arguments [distance,class racetrackk.Race]; default message [La propiedad [{0}] de la clase [{1}] no puede ser nulo]
+Field error in object 'racetrackk.Race' on field 'cost': rejected value [null]; codes [racetrackk.Race.cost.nullable.error.racetrackk.Race.cost,racetrackk.Race.cost.nullable.error.cost,racetrackk.Race.cost.nullable.error.java.math.BigDecimal,racetrackk.Race.cost.nullable.error,race.cost.nullable.error.racetrackk.Race.cost,race.cost.nullable.error.cost,race.cost.nullable.error.java.math.BigDecimal,race.cost.nullable.error,racetrackk.Race.cost.nullable.racetrackk.Race.cost,racetrackk.Race.cost.nullable.cost,racetrackk.Race.cost.nullable.java.math.BigDecimal,racetrackk.Race.cost.nullable,race.cost.nullable.racetrackk.Race.cost,race.cost.nullable.cost,race.cost.nullable.java.math.BigDecimal,race.cost.nullable,nullable.racetrackk.Race.cost,nullable.cost,nullable.java.math.BigDecimal,nullable]; arguments [cost,class racetrackk.Race]; default message [La propiedad [{0}] de la clase [{1}] no puede ser nulo]
+
+BadField:
+Field error in object 'racetrackk.Race' on field 'startDate': rejected value [Wed Oct 30 01:10:13 COT 2024]; codes [racetrackk.Race.startDate.validator.error.racetrackk.Race.startDate,racetrackk.Race.startDate.validator.error.startDate,racetrackk.Race.startDate.validator.error.java.util.Date,racetrackk.Race.startDate.validator.error,race.startDate.validator.error.racetrackk.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrackk.Race.startDate.validator.invalid.racetrackk.Race.startDate,racetrackk.Race.startDate.validator.invalid.startDate,racetrackk.Race.startDate.validator.invalid.java.util.Date,racetrackk.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrackk.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrackk.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrackk.Race,Wed Oct 30 01:10:13 COT 2024]; default message [La propiedad [{0}] de la clase [{1}] con valor [{2}] no es válido]
+
+Code:
+race.startDate.validator.invalid
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test race dates before today--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="valentina-5-14ABA7" id="1" name="RaceSpec" package="racetrackk" tests="1" time="1.04" timestamp="2024-11-06T06:10:07">
+      <properties />
+
+      <testcase classname="racetrackk.RaceSpec" name="test inMiles method" time="1.007" />
+
+      <system-out><![CDATA[--Output from test inMiles method--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test inMiles method--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
