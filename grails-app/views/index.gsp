@@ -117,6 +117,9 @@
 					</g:each>
 				</ul>
 			</div>
+			<g:link controller="user" action="create">
+				New User
+			</g:link>
 		</div>
 	</body>
 </html>
