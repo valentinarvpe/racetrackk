@@ -37314,3 +37314,147 @@ Caused by: java.lang.NullPointerException: Cannot invoke method format() on null
 	at java.lang.String.valueOf(String.java:2994)
 	at java.lang.StringBuilder.append(StringBuilder.java:136)
 	... 7 more
+2024-11-12 10:58:29,769 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 10:58:29,773 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 10:58:29,775 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 10:58:29,775 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 10:58:29,779 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 10:58:29,779 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,553 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,557 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,559 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,560 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,571 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)
+2024-11-12 11:02:02,572 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.errors["role"] == "inList"
+|    |     |        |
+|    |     |        false
+|    |     Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+|    org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+|    Field error in object 'racetrackk.User' on field 'role': rejected value [SuperUser]; codes [racetrackk.User.role.inList.error.racetrackk.User.role,racetrackk.User.role.inList.error.role,racetrackk.User.role.inList.error.java.lang.String,racetrackk.User.role.inList.error,user.role.inList.error.racetrackk.User.role,user.role.inList.error.role,user.role.inList.error.java.lang.String,user.role.inList.error,racetrackk.User.role.not.inList.racetrackk.User.role,racetrackk.User.role.not.inList.role,racetrackk.User.role.not.inList.java.lang.String,racetrackk.User.role.not.inList,user.role.not.inList.racetrackk.User.role,user.role.not.inList.role,user.role.not.inList.java.lang.String,user.role.not.inList,not.inList.racetrackk.User.role,not.inList.role,not.inList.java.lang.String,not.inList]; arguments [role,class racetrackk.User,SuperUser,[admin, user]]; default message [Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]]
+someone
+
+	at racetrackk.UserSpec.test role constraint validation(UserSpec.groovy:23)

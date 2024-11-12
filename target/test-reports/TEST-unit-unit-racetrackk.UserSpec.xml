@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="valentina-5-14ABA7" name="racetrackk.UserSpec" tests="1" time="1.242" timestamp="2024-11-12T18:42:31">
+  <properties />
+  <testcase classname="racetrackk.UserSpec" name="test role constraint validation" time="1.21" />
+  <system-out><![CDATA[--Output from test role constraint validation--
+]]></system-out>
+  <system-err><![CDATA[--Output from test role constraint validation--
+]]></system-err>
+</testsuite>

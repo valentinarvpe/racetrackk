@@ -2,6 +2,7 @@ import grails.util.GrailsUtil
 import racetrackk.Race
 import racetrackk.Registration
 import racetrackk.Runner
+import racetrackk.User
 
 class BootStrap {
 
@@ -9,6 +10,20 @@ class BootStrap {
         println "env: ${GrailsUtil.environment}"
         switch(GrailsUtil.environment){
             case "development":
+                def admin = new User(login:"admin",
+                        password:"wordpass",
+                        role:"admin")
+                admin.save()
+                if(admin.hasErrors()){
+                    println admin.errors
+                }
+                def jdoe = new User(login:"jdoe",
+                        password:"password",
+                        role:"user")
+                jdoe.save()
+                if(jdoe.hasErrors()){
+                    println jdoe.errors
+                }
                 def jane = new Runner(
                         firstName:"Jane",
                         lastName:"Doe",
