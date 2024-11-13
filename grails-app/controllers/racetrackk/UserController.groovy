@@ -8,13 +8,32 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class UserController {
 
+    def beforeInterceptor = [action:this.&auth,
+                             except:['login', 'logout', 'authenticate']]
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def login = {}
 
+    def debug(){
+        println "DEBUG: ${actionUri} called."
+        println "DEBUG: ${params}"
+    }
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond User.list(params), model:[userInstanceCount: User.count()]
+    }
+
+    def auth() {
+        if(!session.user) {
+            redirect(controller:"user", action:"login")
+            return false
+        }
+        if(!session.user.admin){
+            flash.message = "Tsk tsk—admins only"
+            redirect(controller:"race", action:"index")
+            return false
+        }
     }
 
     def authenticate = {
