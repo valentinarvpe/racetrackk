@@ -20,7 +20,8 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: registrationInstance, field: 'paid', 'error')} ">
+<g:if test="${!session?.user.admin}">
+<div class="fieldcontain ">
 	<label for="paid">
 		<g:message code="registration.paid.label" default="Paid" />
 		
@@ -28,4 +29,5 @@
 	<g:checkBox name="paid" value="${registrationInstance?.paid}" />
 
 </div>
+</g:if>
 

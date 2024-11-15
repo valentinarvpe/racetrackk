@@ -26,10 +26,10 @@ class Race {
     BigDecimal inMiles(){
         return distance * 0.6214
     }
-/*
+
     String toString(){
-        return "${name}, ${startDate.format('MM/dd/yyyy')}"
+        return "${name}"
     }
- */
+
 }
 

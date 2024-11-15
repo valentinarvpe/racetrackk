@@ -1,7 +1,4 @@
 package racetrackk
-
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -25,6 +22,9 @@ class RegistrationController {
 
     @Transactional
     def save(Registration registrationInstance) {
+        registrationInstance.adminRole = session?.user.admin
+        //registrationInstance.properties = permittedParams()
+
         if (registrationInstance == null) {
             notFound()
             return
@@ -35,7 +35,23 @@ class RegistrationController {
             return
         }
 
-        registrationInstance.save flush:true
+        try {
+            //println params
+            //params.paid = params.paid?.toBoolean()
+            if(!session?.user.admin) {
+                registrationInstance.properties = params.findAll { key, value ->
+                    key != 'paid'
+                }
+                //println "Antes de bindData: ${registrationInstance.properties}"
+                //bindData(registrationInstance, params, [exclude: ['paid', '_paid']])
+                //println "Después de bindData: ${registrationInstance.properties}"
+            }
+            println(registrationInstance.properties )
+            registrationInstance.save(flush: true)
+        } catch (Exception ex) {
+            respond "Error to saved", view:'create'
+            return
+        }
 
         request.withFormat {
             form multipartForm {
@@ -62,7 +78,18 @@ class RegistrationController {
             return
         }
 
-        registrationInstance.save flush:true
+        try {
+            if(!session?.user.admin) {
+                //bindData(registrationInstance, params, [exclude: ['paid']])
+                registrationInstance.properties = params.findAll { key, value ->
+                    key != 'paid'
+                }
+            }
+            registrationInstance.save()
+        } catch (Exception ex) {
+            respond "Error to saved", view:'create'
+            return
+        }
 
         request.withFormat {
             form multipartForm {
